@@ -1,0 +1,143 @@
+<div class="containerdiv">
+
+
+<mat-card  class="cardnav">
+    <div class="header" >
+        <img src="./assets/logo.png"  style="height: 70px;">        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light lnav">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 myfm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+    
+</mat-card>
+
+    <div class="content" >
+        <div  style="background-image: url('./assets/landingbanner.jpg');background-size:     cover;height:400px">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, magni, fuga unde quidem itaque asperiores aperiam recusandae quas aliquam magnam hic sit tenetur delectus a aut et nemo. Autem, dicta.</p>
+        </div>
+
+
+
+
+                <div>
+                <mat-carousel
+        timings="250ms ease-in"
+        [autoplay]="true"
+        [interval]="6000"
+        color="accent"
+        maxWidth="auto"
+        [proportion]="25"
+        [slides]="3"
+        [loop]="true"
+        [hideArrows]="false"
+        [hideIndicators]="false"
+        [useKeyboard]="true"
+        [useMouseWheel]="false"
+        orientation="ltr"
+        >
+        <mat-carousel-slide
+            #matCarouselSlide
+            *ngFor="let slide of slides; let i = index"
+            [image]="slide.image"
+            overlayColor="#00000040"
+            [hideOverlay]="false"
+        ></mat-carousel-slide>
+        </mat-carousel>
+        </div>
+
+
+
+
+        <div class ="carddiv">
+            <mat-card class="cards">Simple card</mat-card>
+            <mat-card class="cards">Simple card</mat-card>
+            <mat-card class="cards">Simple card</mat-card>
+
+        </div>
+
+
+        <div class ="footer">
+            <div>
+                <span>About Us</span>
+                <div>
+                <img src="./assets/logo.png"  style="height: 70px;">  
+                </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <div> <span>Follow Us</span></div>
+                        <div>
+                        <img src="./assets/facebook.png"  style="height: 70px;">  
+                        <img src="./assets/instagram.png"  style="height: 70px;">  
+                        <img src="./assets/linkedin.png"  style="height: 70px;">  
+                    </div>
+                    </div>
+
+            </div>
+            <div>
+
+                <span>Contact Us</span>
+                <div>                <mat-icon> location_on</mat-icon>
+                    Pimpri Chinchwad Pune
+                </div>
+                <div>
+                <mat-icon> phone</mat-icon>
+                9876543210
+                </div>
+                 <div>
+                <mat-icon> mail_outline</mat-icon>
+                abc@gmaial.com
+                 </div>
+            </div>
+
+            <div style="display: flex;flex-direction: column;">
+                <span>Quick Entry</span>
+                <div class="aform">
+                    <form style="display: flex;flex-direction: column;">
+
+                        <input placeholder="Name">
+                        <input placeholder="Email">
+                        <input placeholder="Phone">
+                    </form>
+                </div>
+            </div>
+              
+              
+        </div>
+    </div>
+
+</div>
+
+

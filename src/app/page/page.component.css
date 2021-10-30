@@ -1,0 +1,74 @@
+.containerdiv{
+    height:auto;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "contentt";
+    overflow-y: auto;
+}
+
+
+
+.header{
+
+    grid-area: header;
+    /* background: lightgreen; */
+    /* height:10%; */
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+
+.content{
+
+    grid-area: contentt;
+    background: lightgray;
+    height:auto;
+    overflow-y: auto;
+}
+
+.myfm{
+    width:fit-content;
+    display:flex;
+    flex-direction: row;
+}
+
+.cardnav{
+height: fit-content;
+
+}
+
+.slide{
+
+    height:300px;
+}
+ 
+.carddiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards{
+
+    height:200px;
+    width:250px;
+    margin:20px;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
